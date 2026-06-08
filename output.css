@@ -5,9 +5,9 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --spacing: 0.25rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -167,6 +167,9 @@
   .static {
     position: static;
   }
+  .col-span-full {
+    grid-column: 1 / -1;
+  }
   .contents {
     display: contents;
   }
@@ -176,11 +179,26 @@
   .table {
     display: table;
   }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .px-9 {
+    padding-inline: calc(var(--spacing) * 9);
+  }
+  .py-9 {
+    padding-block: calc(var(--spacing) * 9);
+  }
+  .py-18 {
+    padding-block: calc(var(--spacing) * 18);
+  }
+  .py-\[8\.75\] {
+    padding-block: 8.75;
+  }
   .font-barlow {
     font-family: var(--font-barlow);
-  }
-  .font-serif {
-    font-family: var(--font-serif);
   }
   .outline {
     outline-style: var(--tw-outline-style);
