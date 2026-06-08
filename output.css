@@ -320,6 +320,86 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .md\:col-span-2 {
+    @media (width >= 48rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .md\:bg-\[url\(\/images\/bg-pattern-quotation\.svg\)\] {
+    @media (width >= 48rem) {
+      background-image: url(/images/bg-pattern-quotation.svg);
+    }
+  }
+  .md\:bg-position-\[top_right_0\.10\] {
+    @media (width >= 48rem) {
+      background-position: top right 0.10;
+    }
+  }
+  .md\:bg-position-\[top_right_1rem\] {
+    @media (width >= 48rem) {
+      background-position: top right 1rem;
+    }
+  }
+  .md\:bg-position-\[top_right_2rem\] {
+    @media (width >= 48rem) {
+      background-position: top right 2rem;
+    }
+  }
+  .md\:bg-position-\[top_right_4rem\] {
+    @media (width >= 48rem) {
+      background-position: top right 4rem;
+    }
+  }
+  .md\:bg-position-\[top_right_6rem\] {
+    @media (width >= 48rem) {
+      background-position: top right 6rem;
+    }
+  }
+  .md\:bg-position-\[top_right_8rem\] {
+    @media (width >= 48rem) {
+      background-position: top right 8rem;
+    }
+  }
+  .md\:bg-position-\[top_right_10rem\] {
+    @media (width >= 48rem) {
+      background-position: top right 10rem;
+    }
+  }
+  .md\:bg-position-\[top_right_11rem\] {
+    @media (width >= 48rem) {
+      background-position: top right 11rem;
+    }
+  }
+  .md\:bg-position-\[top_right_12rem\] {
+    @media (width >= 48rem) {
+      background-position: top right 12rem;
+    }
+  }
+  .md\:bg-position-\[top_right_20rem\] {
+    @media (width >= 48rem) {
+      background-position: top right 20rem;
+    }
+  }
+  .md\:bg-top-right {
+    @media (width >= 48rem) {
+      background-position: right top;
+    }
+  }
+  .md\:bg-no-repeat {
+    @media (width >= 48rem) {
+      background-repeat: no-repeat;
+    }
+  }
+  .md\:px-15 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 15);
+    }
+  }
+  .md\:py-20 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 20);
+    }
+  }
 }
 @property --tw-border-style {
   syntax: "*";
